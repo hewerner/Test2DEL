@@ -23,7 +23,7 @@
       "lsn":             "0000012C000004D2",
       "source_timestamp":"2026-03-22T14:23:00.998Z",
       "sequence":        14,
-      "native_position": "G-AQAAADIKAAAAA..."
+      "native_position": "G-AQAAADIKAAAAAWEJDI"
     },
     "primary_key": ["ORDER_ID"],
     "before": {
@@ -37,7 +37,7 @@
       "STATUS":   { "value": "SHIPPED", "source_type": "VARCHAR2(20)",   "is_null": false },
       "AMOUNT":   { "value": "99.95",   "source_type": "NUMBER(10,2)",   "is_null": false },
       "NOTES":    { "value": null,      "source_type": "VARCHAR2(500)",  "is_null": true  }
-    },
+  },
     "checksum": "a3f1c9e2d4b733d4ff8"
   }
 }
