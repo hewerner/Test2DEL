@@ -1,0 +1,35 @@
+{
+  "specversion":     "1.1",
+  "id":              "schema-ORDERS-v1",
+  "source":          "//oracle-prod.acme.com/ORCL/DEMOUSER",
+  "subject":         "DEMOUSER.ORDERS",
+  "type":            "com.acme.cdc.meta.OBJECT_METADATA",
+  "time":            "2026-03-22T14:00:00.000Z",
+  "datacontenttype": "application/json",
+  "cdcspecversion":  "1.0",
+ 
+  "data": {
+    "table": { "catalog": "ORCL", "schema": "DEMOUSER", "name": "ORDERS" },
+    "primary_key": ["ORDER_ID"],
+    "columns": [
+      { "name": "ORDER_ID",   "source_type": "NUMBER(10)",    "nullable": false, "ordinal": 1 },
+      { "name": "STATUS",     "source_type": "VARCHAR2(20)",  "nullable": false, "ordinal": 2 },
+      { "name": "AMOUNT",     "source_type": "NUMBER(10,2)",  "nullable": false, "ordinal": 3 },
+      { "name": "NOTES",      "source_type": "VARCHAR2(500)", "nullable": true,  "ordinal": 4 }
+    ],
+    "json_schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "$id":     "urn:cdc:schema:DEMOUSER.ORDERS:v1",
+      "type":    "object",
+      "additionalProperties": false,
+      "properties": {
+        "ORDER_ID": { "oneOf": [{"type":"number"},{"type":"null"}] },
+        "STATUS":   { "oneOf": [{"type":"string"},{"type":"null"}] },
+        "AMOUNT":   { "oneOf": [{"type":"string"},{"type":"null"}] },
+        "NOTES":    { "oneOf": [{"type":"string"},{"type":"null"}] }
+      }
+    }
+  }
+}
+ 
+
