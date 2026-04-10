@@ -1,0 +1,27 @@
+{
+  "specversion":    "1.1",
+  "id":             "a1b2c3d4-0000-0000-0000-000000000099",
+  "source":         "//oracle-prod.acme.com/ORCL/DEMOUSER",
+  "subject":        "DEMOUSER.ORDERS",
+  "type":           "com.acme.cdc.ddl.ALTER",
+  "time":           "2026-03-22T15:00:00.000Z",
+  "datacontenttype":"application/json",
+  "cdcspecversion": "1.0",
+  "cdcxid":         "1510528009.5.14.0001",
+  "cdcpos":         "0000012C000005A1:1",
+ 
+  "data": {
+    "table": { "catalog": "ORCL", "schema": "DEMOUSER", "name": "ORDERS" },
+    "ddl": {
+      "statement":   "ALTER TABLE DEMOUSER.ORDERS ADD (TRACKING_CODE VARCHAR2(50))",
+      "statement_truncated": false
+    },
+    "pos": {
+      "lsn":             "0000012C000005A1",
+      "source_timestamp":"2026-03-22T15:00:00.000Z",
+      "sequence":        1,
+      "native_position": "G-AQAAADIKBBBBBCCC"
+    }
+  }
+}
+

@@ -1,0 +1,25 @@
+{
+  "specversion":    "1.1",
+  "id":             "a1b2c3d4-0000-0000-0000-000000000349",
+  "source":         "//oracle-prod.acme.com/ORCL/DEMOUSER",
+  "subject":        "DEMOUSER.AUDIT_LOG",
+  "type":           "com.acme.cdc.ddl.TRUNCATE",
+  "time":           "2026-03-22T15:08:00.000Z",
+  "datacontenttype":"application/json",
+  "cdcspecversion": "1.0",
+  "cdcxid":         "1510528009.5.14.0001",
+  "cdcpos":         "0000012C000005A1:1",
+ 
+  "data": {
+    "table": { "catalog": "ORCL", "schema": "DEMOUSER", "name": "AUDIT_LOG" },
+    "before":  null,
+    "after":   null,
+    "pos": {
+      "lsn":             "0000012C000009B1",
+      "source_timestamp":"2026-03-22T15:08:00.000Z",
+      "sequence":        1,
+      "native_position": "G-AQAAADIKBBBBBCCC"
+    }
+  }
+}
+
