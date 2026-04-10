@@ -1,0 +1,44 @@
+{
+  "specversion":    "1.1",
+  "id":             "7f3a2b10-e14c-4d8a-9f62-3c1d8e4b5a09",
+  "source":         "//oracle-prod.acme.com/ORCL/DEMOUSER",
+  "subject":        "DEMOUSER.ORDERS",
+  "type":           "com.acme.cdc.dml.UPDATE",
+  "time":           "2026-03-22T14:23:01.000Z",
+  "datacontenttype":"application/json",
+  "dataschema":     "urn:cdc:schema:DEMOUSER.ORDERS:v3",
+  "cdcspecversion": "1.0",
+  "cdcxid":         "1510528009.5.13.7625",
+  "cdctxorder":     2,
+  "cdcpos":         "0000012C000004D2:14",
+  "partitionkey":   "1001",
+ 
+  "data": {
+    "table": {
+      "catalog": "ORCL",
+      "schema":  "DEMOUSER",
+      "name":    "ORDERS"
+    },
+    "pos": {
+      "lsn":             "0000012C000004D2",
+      "source_timestamp":"2026-03-22T14:23:00.998Z",
+      "sequence":        14,
+      "native_position": "G-AQAAADIKAAAAA..."
+    },
+    "primary_key": ["ORDER_ID"],
+    "before": {
+      "ORDER_ID": { "value": 1001,      "source_type": "NUMBER(10)",     "is_null": false },
+      "STATUS":   { "value": "PENDING", "source_type": "VARCHAR2(20)",   "is_null": false },
+      "AMOUNT":   { "value": "99.95",   "source_type": "NUMBER(10,2)",   "is_null": false },
+      "NOTES":    { "value": null,      "source_type": "VARCHAR2(500)",  "is_null": true  }
+    },
+    "after": {
+      "ORDER_ID": { "value": 1001,      "source_type": "NUMBER(10)",     "is_null": false },
+      "STATUS":   { "value": "SHIPPED", "source_type": "VARCHAR2(20)",   "is_null": false },
+      "AMOUNT":   { "value": "99.95",   "source_type": "NUMBER(10,2)",   "is_null": false },
+      "NOTES":    { "value": null,      "source_type": "VARCHAR2(500)",  "is_null": true  }
+    },
+    "checksum": "a3f1c9e2d4b733d4ff8"
+  }
+}
+
