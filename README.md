@@ -1,6 +1,9 @@
 # OpenCDC Record Spec
 
-This is for the OpenCDC project discussion.  The following files are the payload examples in the CloudEvents-based JSON format.
+CDC-OIS, a vendor-neutral JSON format for change data capture event streams. CDC-OIS uses CloudEvents v1.1 as its envelope layer, combined with a GoldenGate-derived payload design hardened for cross-platform interoperability. The standard mandates self-describing, schema-inline streams that are independently consumable without external infrastructure dependencies. It defines canonical representations for DML operations, DDL events, transaction identity, schema evolution, and stream lifecycle events across heterogeneous database sources.
+
+The following are some examples of CDC_OIS payload.
+
 
 ## Metadata Record
 
