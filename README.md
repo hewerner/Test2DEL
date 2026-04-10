@@ -1,4 +1,4 @@
-# Repository for OpenCDC Spec
+# OpenCDC Record Spec
 
 This is for the OpenCDC project discussion.  The following files are the payload examples in the CloudEvents-based JSON format.
 
