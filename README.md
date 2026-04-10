@@ -1,5 +1,5 @@
-# Test2
-Repository for OpenCDC Spec
+# Repository for OpenCDC Spec
+
 This is for the OpenCDC project discussion.  The following files are the payload examples in the CloudEvents-based JSON format.
 
 ## Metadata Record
